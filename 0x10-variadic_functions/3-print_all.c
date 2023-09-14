@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 	f_dt form_types[] = {
 		{ "c", print_a_char },
 		{ "i", print_a_integer },
-		{ "f", print_a_float },
+		{ "f", print_all },
 		{ "s", print_a_char_ptr }
 	};
 	unsigned int i = 0;
