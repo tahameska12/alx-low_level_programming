@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdbool.h>
 /**
  * set_bit - sets the value of a bit at a given index to 1
  *
@@ -14,7 +14,7 @@
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	long int temp_n;
-	flag over_half = 0;
+	bool over_half = 0;
 
 	if (index > 63 || !n)
 		return (-1);
